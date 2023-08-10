@@ -1,0 +1,6 @@
+User-agent: *
+Disallow:
+Disallow: assets/img/team
+
+
+Sitemap: https://micromedia.cloud/sitemap.xml
