@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: bmthanvirhdevops 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bmthanvirhdevops
+  template:
+    metadata:
+      labels:
+        app: bmthanvirhdevops 
+    spec:
+      containers:
+        - name: bmthanvirhdevops 
+          image: meracontainerreg.azurecr.io/bmthanvirhdevops
+          ports:
+          - containerPort: 80
